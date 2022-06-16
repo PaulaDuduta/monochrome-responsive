@@ -1,8 +1,10 @@
-.button {
+.buttons {
   width: 112px;
   height: 50px;
   color: $brand-primary;
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
   border: 1px solid $brand-primary;
+  text-align: center;
+  background-color: $white;
 }

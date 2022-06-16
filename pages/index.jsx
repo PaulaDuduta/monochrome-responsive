@@ -13,13 +13,13 @@ export default function Home() {
         HELLO AMIGOS
         <i className="fa-solid fa-phone"></i>
         <img src="/images/banners/banner.png" alt="" />
-        <a href="/" title="View all" className="button">
-          <button className="btn">View all</button>
-        </a>
+        <button type="button" className="buttons" title="View all">
+          View all
+        </button>
         <span>some content in between</span>
-        <a href="/" title="View all" className="button">
-          <button className="btn">View all</button>
-        </a>
+        <button type="button" className="buttons">
+          View all
+        </button>
       </header>
 
       <main className="main"></main>
