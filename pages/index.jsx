@@ -13,7 +13,16 @@ export default function Home() {
         HELLO AMIGOS
         <i className="fa-solid fa-phone"></i>
         <img src="/images/banners/banner.png" alt="" />
+        <a href="/" title="View all" className="button">
+          <button className="btn">View all</button>
+        </a>
+        <span>some content in between</span>
+        <a href="/" title="View all" className="button">
+          <button className="btn">View all</button>
+        </a>
       </header>
+
+      <main className="main"></main>
     </div>
   );
 }
