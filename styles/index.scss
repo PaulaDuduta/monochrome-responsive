@@ -1,0 +1,19 @@
+@import './fonts';
+
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+
+@import '~bootstrap/scss/bootstrap-reboot.scss';
+@import '~bootstrap/scss/bootstrap-grid.scss';
+@import '~bootstrap/scss/bootstrap-utilities.scss';
+
+@import 'variables';
+@import 'shared/index';
+
+body {
+  font-size: 20px;
+  color: green;
+  font-family: 'Playfair', sans-serif;
+}
