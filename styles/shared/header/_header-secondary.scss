@@ -1,45 +1,37 @@
 .header-secondary {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 14px;
-
   @include media-breakpoint-up('lg') {
-    & {
-      margin: 0;
-    }
-  }
-
-  .mobile-title {
-    display: grid;
-
-    span:first-child {
-      justify-self: end;
-      margin-left: 13px;
-    }
-
-    span:last-child {
-      justify-self: center;
-      color: $white;
-      width: 100%;
-      background-color: $brand-primary;
-      text-align: center;
-      font-size: 26px;
-    }
+    background: $brand-primary url('/images/banners/banner.png') center center
+      no-repeat;
+    background-size: cover;
+    height: 497px;
   }
 
   &-inner {
     padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+    @include media-breakpoint-up('lg') {
+      & {
+        margin: 0;
+      }
+    }
 
     .header-controls {
-      position: relative;
-      display: grid;
+      display: flex;
       align-items: center;
-      grid-template-rows: 33px;
+      gap: 35px;
 
-      .search-bar {
-        grid-row: 2 / 3;
-        background-color: $brand-primary;
-        padding: 5px 30px;
+      @include media-breakpoint-up('lg') {
+        & {
+          margin-top: 40px;
+        }
+      }
+
+      .control-buttons > ul {
+        display: flex;
+        align-items: center;
+        gap: 24px;
       }
 
       form {
@@ -48,6 +40,7 @@
         width: 227px;
         border: 1px solid $brand-secondary;
         height: 30px;
+        position: relative;
       }
 
       .search-button {
@@ -55,18 +48,12 @@
         background: none;
         position: absolute;
         opacity: 0.8;
-        top: 42.5px;
-        right: 31px;
+        top: 0.5px;
+        right: 5px;
         font-size: 16px;
 
         i {
-          color: $brand-secondary;
-        }
-
-        @include media-breakpoint-up('lg') {
-          .search-button {
-            left: 5px;
-          }
+          color: $brand-primary;
         }
       }
 
@@ -79,41 +66,27 @@
           font-weight: 500;
           font-size: 14px;
           text-align: left;
-          color: $brand-secondary;
-
-          @include media-breakpoint-up('lg') {
-            &[placeholder='search' i] {
-              padding-left: 30px;
-            }
-          }
+          color: $brand-primary;
+          padding-left: 20px;
+          text-transform: lowercase;
         }
 
         &::placeholder {
-          color: $brand-secondary;
-        }
-      }
-
-      .control-buttons {
-        justify-self: center;
-
-        & > ul {
-          display: flex;
-          align-items: center;
-          gap: 24px;
+          color: $brand-primary;
         }
       }
     }
   }
+}
 
-  .header-connect {
-    color: $white;
-    margin: 40px 100px 0 0;
+.header-connect {
+  color: $white;
+  margin-top: 40px;
 
-    ul {
-      display: flex;
-      justify-content: end;
-      gap: 30px;
-      text-transform: uppercase;
-    }
+  ul {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    text-transform: uppercase;
   }
 }

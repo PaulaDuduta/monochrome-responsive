@@ -1,16 +1,8 @@
 export default function HeaderSecondary() {
   return (
     <section className="header-secondary">
-      <div className="mobile-title d-lg-none">
-        <span>Monochrome</span>
-
-        <span>
-          <i className="fa-solid fa-bars"></i>
-        </span>
-      </div>
-
       <div className="header-secondary-inner container">
-        <div className="header-connect d-none d-lg-block">
+        <section className="header-connect d-none d-lg-flex">
           <ul>
             <li>
               <a
@@ -60,10 +52,14 @@ export default function HeaderSecondary() {
               <a href="tel:+44 (0)10 2345 6789">Call us +44 (0)10 2345 6789</a>
             </li>
           </ul>
-        </div>
+        </section>
 
-        <div className="header-controls">
-          <div className="search-bar">
+        <section className="mobile-title d-lg-none">
+          <span>Monochrome</span>
+        </section>
+
+        <section className="header-controls">
+          <div className="search-bar d-none d-lg-block">
             <form action="">
               <button type="submit" className="search-button">
                 <i className="fa-solid fa-magnifying-glass-dollar"></i>
@@ -114,7 +110,7 @@ export default function HeaderSecondary() {
               </li>
             </ul>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   );
