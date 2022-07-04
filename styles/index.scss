@@ -10,10 +10,12 @@
 @import '~bootstrap/scss/bootstrap-utilities.scss';
 
 @import 'variables';
-@import 'shared/index';
+@import 'reset';
+
+@import './shared/index';
 
 body {
   font-size: 20px;
   font-family: 'Playfair Display', serif;
-  margin: 10px;
+  color: $brand-primary;
 }
