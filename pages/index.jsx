@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from '../components/Header';
+import ContentBanner from '../components/homepage/ContentBanner';
 
 export default function Home() {
   return (
@@ -12,7 +13,13 @@ export default function Home() {
 
       <Header></Header>
 
-      <main className="main"></main>
+      <main className="content">
+        <header className="content-banner-main d-block d-lg-none">
+          <ContentBanner></ContentBanner>
+        </header>
+
+        <section className="content-main"></section>
+      </main>
     </div>
   );
 }

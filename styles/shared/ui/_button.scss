@@ -1,4 +1,4 @@
-.buttons {
+.button {
   width: 112px;
   height: 50px;
   color: $brand-primary;
@@ -7,4 +7,12 @@
   border: 1px solid $brand-primary;
   text-align: center;
   background-color: $white;
+  display: inline-block;
+
+  &-sm {
+    width: 70px;
+    height: 35px;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
 }

@@ -1,7 +1,7 @@
 export default function HeaderSecondary() {
   return (
     <section className="header-secondary">
-      <div className="header-secondary-inner container">
+      <div className="header-secondary-inner container p-lg-0">
         <section className="header-connect d-none d-lg-flex">
           <ul>
             <li>
