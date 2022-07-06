@@ -4,13 +4,16 @@
   font-size: 19px;
 
   &-mobile {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 10px 0;
     background-color: $brand-primary;
-    height: 50px;
+    line-height: 10px;
+
+    .header-primary-content {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     .search-bar {
       background-color: $brand-primary;
@@ -31,7 +34,7 @@
       background: none;
       position: absolute;
       opacity: 0.8;
-      top: 0.5px;
+      top: 5px;
       right: 5px;
       font-size: 16px;
 

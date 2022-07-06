@@ -1,7 +1,7 @@
 export default function HeaderSecondary() {
   return (
     <section className="header-secondary">
-      <div className="header-secondary-inner container p-lg-0">
+      <div className="header-secondary-inner container py-3 p-lg-0">
         <section className="header-connect d-none d-lg-flex">
           <ul>
             <li>
@@ -54,7 +54,7 @@ export default function HeaderSecondary() {
           </ul>
         </section>
 
-        <section className="mobile-title d-lg-none">
+        <section className="mobile-title d-lg-none text-uppercase">
           <span>Monochrome</span>
         </section>
 

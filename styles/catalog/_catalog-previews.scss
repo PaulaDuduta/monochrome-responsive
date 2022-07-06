@@ -1,0 +1,21 @@
+.home-catalog-preview {
+  margin-bottom: 80px;
+
+  .home-catalog-title {
+    border-top: 2px solid $brand-secondary;
+    margin-top: 27px;
+    text-align: center;
+
+    .mobile-title {
+      font-size: 18px;
+      margin: 10px 0;
+      font-weight: 700;
+    }
+
+    .desktop-title {
+      font-size: 35px;
+      margin: 15px 0 30px 0;
+      font-weight: 700;
+    }
+  }
+}

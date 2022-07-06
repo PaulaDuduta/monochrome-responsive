@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from '../components/Header';
+import CatalogPreviews from '../components/homepage/CatalogPreviews';
 import ContentBanner from '../components/homepage/ContentBanner';
 
 export default function Home() {
@@ -18,7 +19,9 @@ export default function Home() {
           <ContentBanner></ContentBanner>
         </header>
 
-        <section className="content-main"></section>
+        <section className="content-main">
+          <CatalogPreviews></CatalogPreviews>
+        </section>
       </main>
     </div>
   );

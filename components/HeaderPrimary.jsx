@@ -40,26 +40,28 @@ export default function HeaderPrimary() {
       </ul>
 
       <div className="header-primary-mobile d-lg-none">
-        <div className="search-form">
-          <form action="">
-            <button type="submit" className="search-button">
-              <i className="fa-solid fa-magnifying-glass-dollar"></i>
-            </button>
+        <section className="header-primary-content container">
+          <div className="search-form">
+            <form action="">
+              <button type="submit" className="search-button">
+                <i className="fa-solid fa-magnifying-glass-dollar"></i>
+              </button>
 
-            <input
-              type="text"
-              className="search-field"
-              placeholder="Search"
-              title="Search"
-            />
-          </form>
-        </div>
+              <input
+                type="text"
+                className="search-field"
+                placeholder="Search"
+                title="Search"
+              />
+            </form>
+          </div>
 
-        <div className="header-primary-bars">
-          <span>
-            <i className="fa-solid fa-bars"></i>
-          </span>
-        </div>
+          <div className="header-primary-bars">
+            <span>
+              <i className="fa-solid fa-bars"></i>
+            </span>
+          </div>
+        </section>
       </div>
     </nav>
   );
