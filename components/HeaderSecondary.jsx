@@ -83,7 +83,7 @@ export default function HeaderSecondary() {
                   rel="noopener noreferrer"
                   title="My Account"
                 >
-                  <i class="fa-solid fa-user-gear"></i>
+                  <i className="fa-solid fa-user-gear"></i>
                 </a>
               </li>
 
@@ -94,7 +94,7 @@ export default function HeaderSecondary() {
                   rel="noopener noreferrer"
                   title="Wish List"
                 >
-                  <i class="fa-solid fa-heart-pulse"></i>
+                  <i className="fa-solid fa-heart-pulse"></i>
                 </a>
               </li>
 

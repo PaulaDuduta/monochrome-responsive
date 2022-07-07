@@ -55,17 +55,17 @@ export default function CatalogPreviews() {
         </section>
       </section>
 
-      <section className="home-content-infos">
+      <section className="home-content-infos container">
         <HomeContent></HomeContent>
       </section>
 
       <section className="home-catalog-preview container">
         <header className="home-catalog-title">
           <h2 className="mobile-title d-block d-lg-none text-uppercase">
-            Men's
+            Men&apos;s
           </h2>
 
-          <h1 className="desktop-title d-none d-lg-block">Men's</h1>
+          <h1 className="desktop-title d-none d-lg-block">Men&apos;s</h1>
         </header>
 
         <section className="product-tiles-mobile d-lg-none">
@@ -83,15 +83,35 @@ export default function CatalogPreviews() {
 
           <ProductTile4></ProductTile4>
         </section>
+
+        <footer>
+          <div className="catalog-ctas my-5 text-center d-none d-lg-block">
+            <a
+              href="https://www.google.com"
+              title="View all"
+              className="button button-mobile d-lg-none"
+            >
+              View all
+            </a>
+
+            <a
+              href="https://www.google.com"
+              title="View all"
+              className="button d-none d-lg-inline-block mt-3 mb-5 text-center"
+            >
+              View all
+            </a>
+          </div>
+        </footer>
       </section>
 
       <section className="home-catalog-preview container">
         <header className="home-catalog-title">
           <h2 className="mobile-title d-block d-lg-none text-uppercase">
-            Women's
+            Women&apos;s
           </h2>
 
-          <h1 className="desktop-title d-none d-lg-block">Women's</h1>
+          <h1 className="desktop-title d-none d-lg-block">Women&apos;s</h1>
         </header>
 
         <section className="product-tiles-mobile d-lg-none">
@@ -110,23 +130,25 @@ export default function CatalogPreviews() {
           <ProductTile4></ProductTile4>
         </section>
 
-        <div className="view-all-button my-5 text-center">
-          <a
-            href="https://www.google.com"
-            title="View all"
-            className="button button-mobile d-lg-none"
-          >
-            View all
-          </a>
+        <footer>
+          <div className="catalog-ctas my-5 text-center">
+            <a
+              href="https://www.google.com"
+              title="View all"
+              className="button button-mobile d-lg-none"
+            >
+              View all
+            </a>
 
-          <a
-            href="https://www.google.com"
-            title="View all"
-            className="button d-none d-lg-inline-block mt-3 mb-5 text-center"
-          >
-            View all
-          </a>
-        </div>
+            <a
+              href="https://www.google.com"
+              title="View all"
+              className="button d-none d-lg-inline-block mt-3 mb-5 text-center"
+            >
+              View all
+            </a>
+          </div>
+        </footer>
       </section>
     </>
   );

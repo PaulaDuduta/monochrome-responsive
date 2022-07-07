@@ -1,0 +1,15 @@
+@import 'footer-connect';
+@import 'footer-contact';
+@import 'footer-nav';
+
+.footer {
+  background: $brand-secondary;
+
+  .container {
+    padding: 0;
+
+    @include media-breakpoint-up('lg') {
+      padding: 0 16px;
+    }
+  }
+}

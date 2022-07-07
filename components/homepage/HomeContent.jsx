@@ -1,6 +1,6 @@
 export default function HomeContent() {
   return (
-    <section className="home-content container">
+    <section className="home-content">
       <aside className="home-content-image">
         <img
           src="/images/banners/oliver-pecker-HONJP8DyiSM-unsplash.png"
@@ -20,7 +20,7 @@ export default function HomeContent() {
           rejects, dislikes, or avoids pleasure itself, because.
         </p>
 
-        <p>
+        <p className="d-none d-lg-block">
           {' '}
           But I must explain to you how all this mistaken idea of denouncing
           pleasure and praising pain was born and I will give you a complete

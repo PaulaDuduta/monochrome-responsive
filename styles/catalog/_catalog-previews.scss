@@ -1,5 +1,9 @@
 .home-catalog-preview {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up('lg') {
+    margin-bottom: 80px;
+  }
 
   .home-catalog-title {
     border-top: 2px solid $brand-secondary;

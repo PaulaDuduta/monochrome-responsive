@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import CatalogPreviews from '../components/homepage/CatalogPreviews';
 import ContentBanner from '../components/homepage/ContentBanner';
@@ -23,6 +24,10 @@ export default function Home() {
           <CatalogPreviews></CatalogPreviews>
         </section>
       </main>
+
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 }

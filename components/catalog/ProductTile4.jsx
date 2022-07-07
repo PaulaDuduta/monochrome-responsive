@@ -15,7 +15,7 @@ export default function ProductTile4() {
 
         <span className="badge">
           <a href="" title="Wish List">
-            <i class="fa-solid fa-heart"></i>
+            <i className="fa-solid fa-heart"></i>
           </a>
         </span>
       </div>
