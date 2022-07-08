@@ -1,6 +1,10 @@
 .footer-connect {
   text-align: center;
 
+  @include media-breakpoint-up('lg') {
+    text-align: left;
+  }
+
   .footer-newsletter {
     display: block;
 
@@ -14,6 +18,11 @@
       font-size: 15px;
       font-family: 'Roboto', sans-serif;
       font-weight: 500;
+
+      @include media-breakpoint-up('lg') {
+        font-family: inherit;
+        font-size: 22px;
+      }
     }
 
     .email-input {
@@ -25,11 +34,19 @@
       margin: 10px auto 20px auto;
       border: 1px solid $gray-secondary;
 
+      @include media-breakpoint-up('lg') {
+        margin-bottom: 10px;
+      }
+
       &::placeholder {
         font-size: 12px;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         color: $brand-primary;
+
+        @include media-breakpoint-up('lg') {
+          color: transparent;
+        }
       }
     }
 
@@ -65,6 +82,12 @@
       align-items: center;
       gap: 20px;
       font-size: 24px;
+
+      @include media-breakpoint-up('lg') {
+        font-size: 20px;
+        justify-content: flex-start;
+        gap: 15px;
+      }
     }
   }
 }

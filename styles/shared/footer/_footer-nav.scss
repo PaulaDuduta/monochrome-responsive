@@ -5,6 +5,12 @@
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
 
+  @include media-breakpoint-up('lg') {
+    background: none;
+    color: $brand-primary;
+    font-family: inherit;
+  }
+
   h2 {
     font-size: 22px;
     padding: 35px 0;
@@ -21,9 +27,24 @@
     justify-content: center;
     gap: 30px;
 
+    @include media-breakpoint-up('lg') {
+      font-size: 22px;
+      flex-direction: row;
+      gap: 150px;
+
+      span {
+        display: inline;
+      }
+    }
+
     ul:first-child {
       border-left: 2px solid $brand-secondary;
       padding-left: 30px;
+
+      @include media-breakpoint-up('lg') {
+        border: none;
+        padding: 0;
+      }
     }
   }
 

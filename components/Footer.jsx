@@ -4,10 +4,16 @@ export default function Footer() {
       <section className="footer-inner container">
         <section className="footer-connect">
           <form className="footer-newsletter">
-            <h2>Let&apos;s connect</h2>
+            <h2 className="d-lg-none">Let&apos;s connect</h2>
 
             <label htmlFor="newsletter" className="email-label">
-              Be the first to receive exclusives offers
+              <span className="d-lg-none">
+                Be the first to receive exclusives offers
+              </span>
+
+              <span className="d-none d-lg-block">
+                sign up for our newsletter
+              </span>
             </label>
 
             <input
@@ -27,7 +33,7 @@ export default function Footer() {
               Submit
             </button>
 
-            <div className="GDPR-terms">
+            <div className="GDPR-terms d-lg-none">
               <input type="checkbox" name="GDPR" id="GDPR"></input>
               <label htmlFor="GDPR">
                 I agree with{' '}
@@ -41,7 +47,7 @@ export default function Footer() {
 
           <section className="footer-social">
             <header>
-              <h2>We are highly likeable</h2>
+              <h2 className="d-lg-none">We are highly likeable</h2>
             </header>
 
             <ul className="my-4">
@@ -93,7 +99,7 @@ export default function Footer() {
         </section>
 
         <nav className="footer-nav">
-          <header>
+          <header className="d-lg-none">
             <h2>How can we help?</h2>
           </header>
 
@@ -101,8 +107,7 @@ export default function Footer() {
             <ul>
               <li>
                 <a href="" title="Style and Fit Advice">
-                  Style and Fit{' '}
-                  <span className="d-none d-lg-block">Advice</span>
+                  Style & Fit <span className="d-none d-lg-inline">Advice</span>
                 </a>
               </li>
 
@@ -120,8 +125,7 @@ export default function Footer() {
 
               <li>
                 <a href="" title="Exchange and Returns">
-                  <span className="d-none d-lg-block">Exchange and</span>{' '}
-                  Returns
+                  <span className="d-none d-lg-inline">Exchange &</span> Returns
                 </a>
               </li>
             </ul>
@@ -154,7 +158,7 @@ export default function Footer() {
           </div>
 
           <footer>
-            <div className="terms">
+            <div className="terms d-lg-none">
               <a href="https://x.ro" title="terms and conditions">
                 terms and conditions
               </a>
@@ -166,7 +170,22 @@ export default function Footer() {
           </footer>
         </nav>
 
-        <section className="footer-contact d-none d-lg-block"></section>
+        <section className="footer-contact d-none d-lg-block">
+          <ul>
+            <li>
+              <a href="tel:+440" title="Call us">
+                Call us <br />
+                +44 (0)10 2345 6789
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:bla@jijoe.com" title="Email Us">
+                Email Customer Care
+              </a>
+            </li>
+          </ul>
+        </section>
       </section>
     </footer>
   );
