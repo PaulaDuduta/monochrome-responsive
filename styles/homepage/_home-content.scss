@@ -11,8 +11,8 @@
     height: 250px;
 
     @include media-breakpoint-up('lg') {
-      width: 666px;
-      height: 666px;
+      width: 600px;
+      height: 600px;
     }
   }
 
@@ -39,9 +39,10 @@
       line-height: 30px;
 
       @include media-breakpoint-up('lg') {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 42px;
         margin-top: 50px;
+        text-align: justify;
       }
     }
   }
