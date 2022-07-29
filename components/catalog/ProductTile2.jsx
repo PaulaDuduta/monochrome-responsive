@@ -1,9 +1,11 @@
+import Link from 'next/link';
+
 export default function ProductTile2() {
   return (
     <article className="product-tile product-tile2">
       <div className="product-image">
-        <a
-          href="https://x.ro"
+        <Link
+          href="/product"
           title="Monochrome"
           className="product-tile-image-container"
         >
@@ -11,7 +13,7 @@ export default function ProductTile2() {
             src="/images/products/recently_viewed_thumbnail_2-2.png"
             alt="New in, Watches, Women, Men"
           ></img>
-        </a>
+        </Link>
 
         <span className="badge">
           <a href="" title="Wish List">
