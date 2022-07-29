@@ -1,7 +1,15 @@
+import Link from 'next/link';
+
 export default function ProductPageHeaderPrimary() {
   return (
     <nav className="product-page-header-primary">
       <ul className="d-none d-lg-flex container">
+        <li>
+          <Link href="/">
+            <a title="Homepage">Homepage</a>
+          </Link>
+        </li>
+
         <li>
           <a href="https://x.ro" title="New Arrivals">
             New Arrivals

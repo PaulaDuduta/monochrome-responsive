@@ -4,15 +4,13 @@ export default function ProductTile2() {
   return (
     <article className="product-tile product-tile2">
       <div className="product-image">
-        <Link
-          href="/product"
-          title="Monochrome"
-          className="product-tile-image-container"
-        >
-          <img
-            src="/images/products/recently_viewed_thumbnail_2-2.png"
-            alt="New in, Watches, Women, Men"
-          ></img>
+        <Link href="/product">
+          <a title="Monochrome" className="product-tile-image-container">
+            <img
+              src="/images/products/recently_viewed_thumbnail_2-2.png"
+              alt="New in, Watches, Women, Men"
+            ></img>
+          </a>
         </Link>
 
         <span className="badge">
