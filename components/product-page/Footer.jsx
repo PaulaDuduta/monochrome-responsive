@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -106,9 +108,12 @@ export default function Footer() {
           <div className="website-nav">
             <ul>
               <li>
-                <a href="" title="Style and Fit Advice">
-                  Style & Fit <span className="d-none d-lg-inline">Advice</span>
-                </a>
+                <Link href="/style">
+                  <a title="Style and Fit Advice">
+                    Style & Fit{' '}
+                    <span className="d-none d-lg-inline">Advice</span>
+                  </a>
+                </Link>
               </li>
 
               <li>

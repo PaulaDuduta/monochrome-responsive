@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function Footer() {
   return (
     <footer className="footer">
@@ -23,7 +21,7 @@ export default function Footer() {
               name="newsletter"
               id="newsletter"
               className="email-input"
-              placeholder="Email"
+              placeholder="Your Email"
             ></input>
 
             <button
@@ -108,12 +106,9 @@ export default function Footer() {
           <div className="website-nav">
             <ul>
               <li>
-                <Link href="/style">
-                  <a title="Style and Fit Advice">
-                    Style & Fit{' '}
-                    <span className="d-none d-lg-inline">Advice</span>
-                  </a>
-                </Link>
+                <a href="" title="Style and Fit Advice">
+                  Style & Fit <span className="d-none d-lg-inline">Advice</span>
+                </a>
               </li>
 
               <li>
@@ -130,7 +125,7 @@ export default function Footer() {
 
               <li>
                 <a href="" title="Exchange and Returns">
-                  <span className="d-none d-lg-inline">Exchange &</span> Returns
+                  <span className="d-none d-lg-inline">Exchange</span> & Returns
                 </a>
               </li>
             </ul>

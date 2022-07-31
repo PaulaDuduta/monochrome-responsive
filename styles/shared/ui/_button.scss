@@ -34,4 +34,11 @@
     line-height: 15px;
     background-color: $brand-secondary;
   }
+
+  &-style {
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+  }
 }

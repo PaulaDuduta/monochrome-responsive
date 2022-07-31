@@ -1,37 +1,62 @@
+// import Link from 'next/link';
+// import { useRouter } from 'next/router';
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// function render() {
+//   const router = useRouter();
+//   const homeLink = (
+//     <li>
+//       <Link href="/">
+//         <a title="Homepage">Homepage</a>
+//       </Link>
+//     </li>
+//   );
+//   {
+//     // router.homeLink && (
+//     // );
+//   }
+
+//   return (
+//     <li>
+//       <Link href="/">
+//         <a>BLA BLA</a>
+//       </Link>
+//     </li>
+//   );
+// }
+
+// root.render(router);
+
 export default function HeaderPrimary() {
   return (
     <nav className="header-primary">
-      <ul className="d-none d-lg-flex container">
+      <ul id="root" className="d-none d-lg-flex container">
         <li>
           <a href="https://x.ro" title="New Arrivals">
             New Arrivals
           </a>
         </li>
-
         <li>
           <a href="https://x.ro" title="Brands">
             Brands
           </a>
         </li>
-
         <li>
           <a href="https://x.ro" title="Men's">
             Men&apos;s
           </a>
         </li>
-
         <li>
           <a href="https://x.ro" title="Women's">
             Women&apos;s
           </a>
         </li>
-
         <li>
           <a href="https://x.ro" title="Accesories">
             Accesories
           </a>
         </li>
-
         <li>
           <a href="https://x.ro" title="Lookbook">
             Lookbook
