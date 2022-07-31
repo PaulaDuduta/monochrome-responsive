@@ -25,7 +25,7 @@ export default function StyleAdvice() {
                   value="male"
                   required
                 />
-                <label htmlFor="male">Men's</label>
+                <label htmlFor="male">Men&apos;s</label>
               </div>
 
               <div>
@@ -36,7 +36,7 @@ export default function StyleAdvice() {
                   value="female"
                   required
                 />
-                <label htmlFor="female">Women's</label>
+                <label htmlFor="female">Women&apos;s</label>
               </div>
             </div>
 
