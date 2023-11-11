@@ -1,33 +1,3 @@
-// import Link from 'next/link';
-// import { useRouter } from 'next/router';
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// function render() {
-//   const router = useRouter();
-//   const homeLink = (
-//     <li>
-//       <Link href="/">
-//         <a title="Homepage">Homepage</a>
-//       </Link>
-//     </li>
-//   );
-//   {
-//     // router.homeLink && (
-//     // );
-//   }
-
-//   return (
-//     <li>
-//       <Link href="/">
-//         <a>BLA BLA</a>
-//       </Link>
-//     </li>
-//   );
-// }
-
-// root.render(router);
-
 export default function HeaderPrimary() {
   return (
     <nav className="header-primary">

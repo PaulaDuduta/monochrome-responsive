@@ -1,11 +1,13 @@
 .product-tiles-mobile {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   align-items: center;
   gap: 5px;
 }
 
 .product-tiles-desktop {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 24px;
 }
@@ -17,7 +19,7 @@
     img {
       width: 100%;
 
-      @include media-breakpoint-up('lg') {
+      @include media-breakpoint-up('md') {
         width: 100%;
         height: auto;
       }
@@ -27,7 +29,7 @@
       position: absolute;
       right: 10px;
 
-      @include media-breakpoint-up('lg') {
+      @include media-breakpoint-up('md') {
         right: 15px;
         top: 5px;
       }
@@ -40,7 +42,7 @@
     font-weight: 700;
     margin-top: 10px;
 
-    @include media-breakpoint-up('lg') {
+    @include media-breakpoint-up('md') {
       font-size: 22px;
       margin-top: 10px;
       text-transform: uppercase;
@@ -52,7 +54,7 @@
     font-size: 15px;
     line-height: 12px;
 
-    @include media-breakpoint-up('lg') {
+    @include media-breakpoint-up('md') {
       font-size: 22px;
       line-height: normal;
     }

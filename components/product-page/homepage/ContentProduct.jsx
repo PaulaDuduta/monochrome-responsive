@@ -1,27 +1,46 @@
+import Image from 'next/image';
+
 export default function ContentProduct() {
   return (
     <section className="content-product">
       <aside className="product-images">
         <div className="screen-image">
-          <img
-            src="images/product-page/3.png"
+          <Image
+            src="/images/product-page/3.png"
             alt="watch, wrist, metal, black, style"
+            layout="responsive"
+            width={200}
+            height={200}
           />
         </div>
 
-        <div className="carousel-images">
-          <img src="images/product-page/6.png" alt="watch, black, metal" />
-
-          <img src="images/product-page/7.png" alt="watch, black" />
-
-          <img
-            src="images/product-page/jj-ying-dfjfNu3Q0Yc-unsplash.png"
-            alt="watch, black, metal, product-case"
+        <div className="carousel-images d-flex justify-content-evenly gap-2">
+          <Image
+            src="/images/product-page/6.png"
+            alt="watch, black, metal"
+            width={120}
+            height={120}
           />
 
-          <img
-            src="images/product-page/6.png"
+          <Image
+            src="/images/product-page/7.png"
+            alt="watch, black"
+            width={120}
+            height={120}
+          />
+
+          <Image
+            src="/images/product-page/jj-ying-dfjfNu3Q0Yc-unsplash.png"
+            alt="watch, black, metal, product-case"
+            width={120}
+            height={120}
+          />
+
+          <Image
+            src="/images/product-page/6.png"
             alt="watch, black, metal, leather"
+            width={120}
+            height={120}
           />
         </div>
       </aside>
@@ -51,17 +70,17 @@ export default function ContentProduct() {
           <h4>delivery & returns</h4>
         </div>
 
-        <div className="product-ctas">
+        <div className="product-ctas flex-wrap flex-lg-nowrap justify-content-center justify-content-lg-between gap-2">
           <div className="cart-btn">
             <i className="fa-solid fa-bag-shopping"></i>
             <button type="button" className="button" title="Add to bag">
               Add to bag
             </button>
           </div>
-          <div className="whishlist-btn">
+          <div className="wishlist-btn">
             <i className="fa-regular fa-heart"></i>
-            <button type="button" className="button" title="Whishlist">
-              Whishlist
+            <button type="button" className="button" title="Wishlist">
+              Wishlist
             </button>
           </div>
         </div>

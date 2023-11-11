@@ -5,8 +5,8 @@ export default function ProductPageHeaderPrimary() {
     <nav className="product-page-header-primary">
       <ul className="d-none d-lg-flex container">
         <li>
-          <Link href="/">
-            <a title="Homepage">Homepage</a>
+          <Link href="/" title="Homepage">
+            Homepage
           </Link>
         </li>
         <li>

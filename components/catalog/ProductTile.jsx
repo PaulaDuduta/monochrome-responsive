@@ -1,16 +1,26 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
-export default function ProductTile1() {
+export default function ProductTile({ product }) {
+  if (!product) {
+    return null;
+  }
+
   return (
     <article className="product-tile">
       <div className="product-image">
-        <Link href="/product">
-          <a title="Monochrome" className="product-tile-image-container">
-            <img
-              src="/images/products/recently_viewed_thumbnail_2-1.png"
-              alt="New in, Watches, Women, Men"
-            ></img>
-          </a>
+        <Link
+          href="/product"
+          title="Monochrome"
+          className="product-tile-image-container"
+        >
+          <Image
+            key={product.id}
+            src={`/images/products/${product.name}`}
+            alt="New in, Watches, Women, Men"
+            width="200"
+            height="200"
+          ></Image>
         </Link>
 
         <span className="badge">

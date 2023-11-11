@@ -1,7 +1,11 @@
-import ProductTile1 from '../../catalog/ProductTile1';
-import ProductTile2 from '../../catalog/ProductTile2';
-import ProductTile3 from '../../catalog/ProductTile3';
-import ProductTile4 from '../../catalog/ProductTile4';
+import ProductTile from '../../catalog/ProductTile';
+
+const products = [
+  { id: 1, name: 'recently_viewed_thumbnail_2-1.png' },
+  { id: 2, name: 'recently_viewed_thumbnail_2-2.png' },
+  { id: 3, name: 'recently_viewed_thumbnail_2-3.png' },
+  { id: 4, name: 'recently_viewed_thumbnail_2-7.png' },
+];
 
 export default function CatalogPreviews() {
   return (
@@ -12,19 +16,15 @@ export default function CatalogPreviews() {
         </header>
 
         <section className="product-tiles-mobile d-lg-none">
-          <ProductTile1></ProductTile1>
-
-          <ProductTile2></ProductTile2>
+          {products.map((product) => (
+            <ProductTile key={product.id} product={product}></ProductTile>
+          ))}
         </section>
 
-        <section className="product-tiles-desktop d-none d-lg-flex">
-          <ProductTile1></ProductTile1>
-
-          <ProductTile2></ProductTile2>
-
-          <ProductTile3></ProductTile3>
-
-          <ProductTile4></ProductTile4>
+        <section className="product-tiles-desktop">
+          {products.map((product) => (
+            <ProductTile key={product.id} product={product}></ProductTile>
+          ))}
         </section>
       </section>
 
@@ -34,19 +34,15 @@ export default function CatalogPreviews() {
         </header>
 
         <section className="product-tiles-mobile d-lg-none">
-          <ProductTile1></ProductTile1>
-
-          <ProductTile2></ProductTile2>
+          {products.map((product) => (
+            <ProductTile key={product.id} product={product}></ProductTile>
+          ))}
         </section>
 
-        <section className="product-tiles-desktop d-none d-lg-flex">
-          <ProductTile1></ProductTile1>
-
-          <ProductTile2></ProductTile2>
-
-          <ProductTile3></ProductTile3>
-
-          <ProductTile4></ProductTile4>
+        <section className="product-tiles-desktop">
+          {products.map((product) => (
+            <ProductTile key={product.id} product={product}></ProductTile>
+          ))}
         </section>
       </section>
     </>
