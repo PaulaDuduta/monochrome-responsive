@@ -1,3 +1,4 @@
+import 'isomorphic-fetch';
 import './../styles/index.scss';
 
 function MyApp({ Component, pageProps }) {
