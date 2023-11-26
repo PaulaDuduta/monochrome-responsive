@@ -3,13 +3,13 @@
   justify-content: center;
   align-items: center;
 
-  @include media-breakpoint-up('lg') {
-    display: flex;
+  @include media-breakpoint-up('md') {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 100px;
     margin-top: 25px;
     margin-bottom: 35px;
-    flex-direction: row;
-    align-items: unset;
-    justify-content: unset;
   }
 
   .product-images {
@@ -27,15 +27,11 @@
     .carousel-images {
       display: flex;
       justify-content: space-evenly;
+      margin-bottom: 1rem;
     }
   }
 
   .product-details {
-    @include media-breakpoint-up('lg') {
-      margin-left: 140px;
-      width: 470px;
-    }
-
     header > h3 {
       font-size: 25px;
       font-weight: 700;
@@ -64,7 +60,9 @@
 
   .product-ctas {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     align-items: center;
     margin-top: 40px;
     margin-bottom: 70px;

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function HeaderSecondary() {
   return (
     <section className="header-secondary">
@@ -55,7 +57,9 @@ export default function HeaderSecondary() {
         </section>
 
         <section className="mobile-title d-lg-none text-uppercase">
-          <span>Monochrome</span>
+          <Link href="/">
+            <a title="Monochrome">Monochrome</a>
+          </Link>
         </section>
 
         <section className="header-controls">
